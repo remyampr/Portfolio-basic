@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" >
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+        <meta name="description" content="Portfolio page and Projects">
+        <meta name="author" content="Remya P R" >
+        <title>Contact Form</title>
+    </head>
+ <!--   -->
+    <body style="background-color: #f2e0d6">
+        <header >
+            <nav aria-label=" main menu">
+                <ul>
+                    <li><a href="index.html" rel="homepage">Home</a></li>
+                    <li><a href="index.html#about" rel="aboutpage">About Me</a></li>
+                    <li><a href="project.html" rel="projectpage">Project</a></li>
+                    <li><a href="#" rel="contactpage">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+       <!--  -->
+        <main style="max-width: 500px; margin: 0 auto; background-color: #f9f3e4" >
+            <header >
+                <h1>Let's Connect!</h1>
+            </header>
+
+            <form action="index.html" method="post" autocomplete="on" title="contact form" aria-label="user details">
+                <fieldset>
+                    <legend>Contact Form</legend>
+
+                    <label for="name">Namae:</label>
+                    <input type="text" id="name" placeholder="Enter your name" required name="name" >
+                    <br >
+                    <br >
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" placeholder="Enter your email id" required >
+                    <br ><br >
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" name="phone" id="phone" placeholder="Enter your phone number" pattern="[0-9]{10}" required>
+                    <br ><br >
+                    <label for="password">Password:</label>
+                    <input type="password" name="password" id="password" placeholder="Enter password" required >
+                    <br ><br >
+                    <label for="dob">Date of birth:</label>
+                    <input type="date" name="dob" id="dob" required >
+                    <br ><br >
+                    <label>Gender:</label>
+                        <input type="radio" name="gender" id="male" value="male" >
+                        <label for="male">Male</label>
+                        <input type="radio" name="gender" id="female" value="female" checked >
+                        <label for="female">Female</label>
+                        <input type="radio" name="gender" id="other" value="other" >
+                        <label for="other">Other</label>
+                    
+                    <br ><br >
+                    <label for="education">Education:</label>
+                    <select name="education" id="education">
+                        <option value="select">select</option>
+                        <optgroup label="undergraduate">
+                            <option value="bachelor">Bachelor</option>
+                        </optgroup>
+                        <optgroup label="postgraduate">
+                            <option value="master">Master</option>
+                            <option value="phd">Doctorate (PhD)</option>
+                        </optgroup>
+                    </select>
+                    <br ><br >
+                    <label>How did you hear about us : </label>
+                        <input type="checkbox" name="insta" id="insta" >
+                        <label for="insta">Instagram</label>
+                        <input type="checkbox" name="youtube" id="youtube" >
+                        <label for="youtube">Youtube</label>
+                        <input type="checkbox" name="fb" id="fb" >
+                        <label for="fb">Facebook</label>
+                   
+                    <br ><br >
+                    <label for="msg">Any message for us?</label>
+                    <textarea name="msg" id="msg" placeholder="write your message"></textarea>
+                    <br><br>
+
+                    <label>Click for submit:</label>
+                    <input type="submit" value="Submit" >
+                    <input type="reset" value="reset" aria-label="for reset">
+                </fieldset>
+            </form>
+        </main>
+        <br ><br >
+
+        <footer style="max-width: 800px; margin: 0 auto">
+            &copy; All rights reserved
+            <p>Published on <time datetime="11-11-2024">2024</time>.</p>
+            <address>place:Thrissur
+                <br>
+                phone number:00236541</address>
+        </footer>
+    </body>
+</html>
